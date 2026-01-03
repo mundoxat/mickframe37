@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mick xatframe</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+  <link rel="shortcut icon" type="image/x-icon" href="https://u.cubeupload.com/BrunoT/ChatGPTImage7deabrde.png" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+  <div class="background-animation"></div>
+  
+  <div class="music-player">
+    <button id="musicToggle">
+      <i data-lucide="music" class="music-icon"></i>
+    </button>
+    <audio id="audioPlayer" src="music/som1.mp3" loop></audio>
+  </div>
+
+  <nav class="navigation">
+    <button class="nav-btn active" data-page="home">
+      <i data-lucide="home"></i>
+      <span>Home</span>
+    </button>
+    <button class="nav-btn" data-page="gallery">
+      <i data-lucide="image"></i>
+      <span>Gallery</span>
+    </button>
+    <button class="nav-btn" data-page="married">
+      <i data-lucide="heart"></i>
+      <span>Married</span>
+    </button>
+    <button class="nav-btn" data-page="youtube">
+      <i data-lucide="youtube"></i>
+      <span>YouTube</span>
+    </button>
+     
+     
+
+  </nav>
+
+  <main class="container">
+    <!-- Home Page -->
+    <div class="page active" id="home">
+      <div class="profile-card">
+        <div class="profile-image">
+          <div class="instagram-border">
+            <img src="https://i.pravatar.cc/200?img=12" alt="Profile Photo">
+          </div>
+        </div>
+        <h1>Mick👑</h1>
+        <p class="subtitle">xat.com/Trade</p>
+        <p class="profile-description">
+          The real is rare, but the fake is everywhere.   
+        </p>
+      </div>
+    </div>
+
+    <!-- Married Page -->
+    <div class="page" id="married">
+      <div class="married-content">
+        <div class="couple-photos">
+          <div class="couple-photo-container">
+            <img src="https://img.quizur.com/f/img634564b965b3d9.78105519.jpg" alt="Couple Photo 1">
+            <div class="heart-corner">❤️</div>
+          </div>
+          <div class="couple-photo-container">
+            <img src="https://i.pinimg.com/originals/47/f3/3f/47f33f16aedd5154a25ce3cbcc6d5573.jpg" alt="Couple Photo 1">
+            <div class="heart-corner">❤️</div>
+          </div>
+          <div class="couple-photo-container">
+            <img src="https://i.pinimg.com/736x/3a/af/b6/3aafb6c47cb0aa3ebae9b1acfc46170e.jpg" alt="Couple Photo 2">
+            <div class="heart-corner">❤️</div>
+          </div>
+        </div>
+        <div class="married-text">
+          <h2>💏</h2>
+          <p>;)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- YouTube Page -->
+    <div class="page" id="youtube">
+      <div class="video-container">
+        <iframe 
+          src="https://www.youtube.com/embed/VPO9XDRK0jc" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Gallery Page -->
+    <div class="page" id="gallery">
+      <div class="gallery-grid">
+        <div class="gallery-item" data-img="https://media.tenor.com/_g11bRHLxxAAAAAM/anime-anime-girl.gif">
+          <img src="https://media.tenor.com/_g11bRHLxxAAAAAM/anime-anime-girl.gif" alt="Gallery Image">
+        </div>
+        <div class="gallery-item" data-img="https://media.tenor.com/BlGRZ4BRGUQAAAAM/happy-hori-horimiya.gif">
+          <img src="https://media.tenor.com/BlGRZ4BRGUQAAAAM/happy-hori-horimiya.gif" alt="Gallery Image">
+        </div>
+        <div class="gallery-item" data-img="https://i.pinimg.com/originals/65/3a/4c/653a4c6b311ad8c517da3ffaf4500d80.gif">
+          <img src="https://i.pinimg.com/originals/65/3a/4c/653a4c6b311ad8c517da3ffaf4500d80.gif" alt="Gallery Image">
+        </div>
+        <div class="gallery-item" data-img="https://media.tenor.com/GkVtt9EvSwkAAAAM/matching-pfp.gif">
+          <img src="https://media.tenor.com/GkVtt9EvSwkAAAAM/matching-pfp.gif" alt="Gallery Image">
+        </div>
+      </div>
+    </div>
+
+    <!-- Chat Page -->
+    <div class="page" id="chat">
+      <div class="chat-container">
+        <div class="chat-messages"></div>
+        <div class="chat-input">
+          <input type="text" placeholder="Type your message...">
+          <button><i data-lucide="send"></i></button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="galleryModal" class="modal">
+    <span class="modal-close">&times;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
