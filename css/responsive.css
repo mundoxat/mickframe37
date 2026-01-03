@@ -1,0 +1,255 @@
+/* Responsive Styles */
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .hero-content h1 {
+    font-size: 48px;
+  }
+
+  .hero-content h2 {
+    font-size: 24px;
+  }
+
+  .image-container {
+    width: 350px;
+    height: 350px;
+  }
+
+  .section-header h2 {
+    font-size: 32px;
+  }
+
+  .about-text h3,
+  .video-content h3,
+  .contact-info h3 {
+    font-size: 24px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 80px;
+  }
+
+  .hero-content {
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-image {
+    justify-content: center;
+  }
+
+  .image-container {
+    width: 300px;
+    height: 300px;
+  }
+
+  .about-content,
+  .video-container,
+  .contact-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .about-image,
+  .video-wrapper,
+  .video-content,
+  .contact-info,
+  .contact-form {
+    width: 100%;
+  }
+
+  .video-wrapper {
+    margin-bottom: 30px;
+  }
+
+  .experience-badge {
+    right: 20px;
+  }
+
+  .portfolio-grid,
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer-links ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: var(--background-color);
+    flex-direction: column;
+    padding: 80px 40px 40px;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    z-index: 998;
+  }
+
+  .nav-active .nav-links {
+    right: 0;
+  }
+
+  .menu-toggle {
+    display: block;
+    z-index: 999;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .hero-content h2 {
+    font-size: 22px;
+  }
+
+  .section-header {
+    margin-bottom: 40px;
+  }
+
+  .section-header h2 {
+    font-size: 28px;
+  }
+
+  .portfolio-filter {
+    flex-wrap: wrap;
+  }
+
+  .portfolio-grid,
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+
+  .portfolio-modal .modal-body {
+    flex-direction: column;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .image-container {
+    width: 280px;
+    height: 280px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  .experience-badge {
+    width: 100px;
+    height: 100px;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .experience-badge span:first-child {
+    font-size: 30px;
+  }
+
+  .experience-badge span:last-child {
+    font-size: 12px;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .section-header h2 {
+    font-size: 24px;
+  }
+
+  .about-text h3,
+  .video-content h3,
+  .contact-info h3 {
+    font-size: 20px;
+  }
+
+  .about-details,
+  .contact-details {
+    flex-direction: column;
+  }
+
+  .image-container {
+    width: 240px;
+    height: 240px;
+  }
+
+  .modal-content {
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  .portfolio-info h3 {
+    font-size: 18px;
+  }
+
+  .back-to-top {
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+/* Dark mode specific responsive adjustments */
+@media (max-width: 767.98px) {
+  .dark-theme .nav-links {
+    background-color: var(--background-color);
+  }
+}
